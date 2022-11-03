@@ -1,0 +1,138 @@
+.login{
+    width: 45%;
+    border: 2px solid var(--brand);
+    color: var(--brand);
+    font-size: 1.1rem;
+    font-weight: 700 ;
+}
+.register{
+    width: 45%;
+    height: 48px;
+    top: 84px;
+    border-radius: 0px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1rem ;
+    background-color: var(--brand);
+    color: var(--withe)
+
+}
+.button-filter{
+    width: 90%;
+    border: var(--brand) 1px solid;
+    color: var(--brand);
+    font-size: 1.1rem ;
+    background-color: var(--withe);
+}
+.button-filter:hover{
+    background-color: var(--brand);
+    color: var(--withe);
+}
+.clear-x{
+    background: none;
+    color: var(--withe);
+    font-size: 1.1rem ;
+    border: none;
+    margin-left: 1rem;
+}
+.cadastro{
+    width: 90%;
+    height: 2.5rem;
+    top: 84px;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: var(--brand);
+    color: var(--withe);
+    font-size: 1.1rem ;
+    font-weight: 700;
+}
+.retornar{
+    width: 90%;
+    height: 2.5rem;
+    top: 84px;
+    margin-bottom: 1rem;
+    background-color:var(--withe);
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    font-size: 1.1rem ;
+    font-weight: 700;
+}
+.retornar:hover{
+    opacity: 60%;
+}
+.cadastro:hover{
+    opacity: 90%;
+}
+.Login{
+    width: 44%;
+    height: 2.5rem;
+    top: 84px;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: var(--brand);
+    color: var(--withe);
+    font-size: 1.1rem ;
+    font-weight: 700;
+}
+.Home{
+    width: 45%;
+    height: 2.5rem;
+    top: 84px;
+    margin-bottom: 1rem;
+    background-color:var(--withe);
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    font-size: 1.1rem ;
+    font-weight: 700;
+}
+.logout{
+    height: 48px;
+    width: 142px;
+    left: 1178px;
+    top: 16px;
+    border-radius: 0px;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: none;
+
+}
+.yesEditUser{
+    border:2px solid var(--brand);
+    width: 80%;
+    border-radius: 0px;
+    height: 3.4rem;
+    background-color: var(--brand);
+    color: var(--withe);
+}
+.green{
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.end-x{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+}
+.select-empresa{
+    rotate: 90deg;
+}
+.empresa{
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.empresa:hover{
+    background-color: var(--brand);
+    color: var(--withe);
+}
+.end-x-edit{
+    background: none;
+    border: none;
+    margin-top: -9px;
+    position: absolute;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,29 @@
+.select > h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--withe);
+    margin-right: 0.5rem;
+}
+.clear-modal{
+    height: 17.63125228881836px;
+    width: 17.63125228881836px;
+    left: 6.68438720703125px;
+    top: 6.68438720703125px;
+    border-radius: 0px;
+    
+}
+.logo > h3{
+    font-weight: 700;
+}
+.subTitle-h2{
+    margin-left: 2rem;
+}
+.title-h1-modal{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    
+}

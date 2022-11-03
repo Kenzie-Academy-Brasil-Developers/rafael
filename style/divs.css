@@ -1,0 +1,240 @@
+.circle{
+    height: 0.7rem;
+    width: 0.7rem;
+    top: 26.39654541015625px;
+    background-color: var(--purple);
+    border-radius: 0px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.select{
+    border-radius: 0px;
+    height: 3.5rem;
+    background-color: var(--brand);
+    margin-top: 1.5rem;
+    width: 90%;
+    margin-left: 5%;
+}
+.space-header{
+    width: 90%;
+    height: 90%;
+}
+.select > img{
+    left: 240px;
+}
+.option{
+    height: 95px;
+    width: 100%;
+    left: 0px;
+    top: 58px;
+    border-radius: 0px;
+    background-color: var(--withe);
+    position: absolute;
+}
+.div-options{
+    width: 90%;
+}
+.div-filter{
+    width: 100%;
+    position: absolute;
+}
+.form{
+    width: 100%;
+    background-color: var(--grey500);
+}
+.section-form{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.form > input{
+    width: 90%;
+    height: 2.5rem;
+    left: 509px;
+    top: 337px;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--grey400);
+}
+.form > div > h1{
+    margin-left: 5%;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.section-login{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.div-list{
+    width: 100%;
+}
+.section-user{
+    width: 80%;
+    height: 121px;
+    border: 1px solid var(--grey400);
+    margin-left: 10%;
+}
+.section-user > h2{
+    margin-left: 2rem;  
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.section-user > img{
+    height: 26.72395896911621px;
+    width: 26.72395896911621px;
+    border-radius: 0px;
+    margin-right: 2rem;
+     
+}
+.div-inform-user{
+    margin-left: 2rem;
+    width: 60%;
+}
+.div-list-users{
+    width: 80%;
+    background-color: var(--brand);
+    height: 78px;
+    margin-left: 10%;
+    border: 1px solid var(--brand);
+    color: var(--withe);
+    margin-top: 3.4rem;
+}
+.section-modal-edit{
+    position: absolute;
+    background-color: var(--brand-back);
+}
+.form-edit-user{
+    width: 40%;
+    height: 43%;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--withe);
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.form-edit-user > input{
+    border-color: var(--grey400);
+    margin-bottom: 0.8rem;
+    height: 3.4rem;
+    width: 80%;
+    border-radius: 0px;
+    
+}
+
+.div-admin > h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.div-admin > div{
+    height: 32px;
+    width: 282px;
+    left: 586px;
+    top: 184px;
+    border-radius: 15px;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.div-x{
+    margin-bottom: -0.5rem;
+}
+.div-admin-select > p {
+    margin-right: 1rem;
+}
+.div-admin-select > img {
+    height: 7.074999809265137px;
+    width: 12px;
+    left: 6px;
+    top: 8.300048828125px;
+    border-radius: 0px;
+}
+.div-admin > button{
+    height: 48px;
+    width: 150px;
+    left: 1172px;
+    top: 173px;
+    border-radius: 0px;
+    border: 1px solid var(--brand);    
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--withe);
+    background-color: var(--brand);
+    
+}
+.empresas2{
+    width: 30%;
+    height:350px ;
+    background-color: var(--withe);
+    position: absolute;
+    margin-top: -4.111rem;
+    margin-right: -6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: -1px 3px 18px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 18px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 18px -1px rgba(0,0,0,0.75);
+    overflow-y: scroll;
+
+}
+.empresas > button{
+    width: 100%;
+    height: 5rem;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+}
+.form-edit{
+    border: 1px solid;
+    background-color: var(--withe);
+    height: 330px;
+    width: 506px;
+    padding-top: 1rem;
+}
+.form-edit > h1{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.form-edit > button{
+    height: 48px;
+    left: 3517px;
+    top: 3196px;
+    border-radius: 0px;
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: var(--withe);
+    margin-bottom: 2rem;
+
+}
+.form-edit > textarea{
+    resize: none;
+    margin-bottom: 0.9rem;
+    width: 78.5%;
+}

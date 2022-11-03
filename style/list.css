@@ -1,0 +1,116 @@
+.liste-home{
+    display: flex;
+    overflow:auto;
+
+    width: 100vw;
+}
+.list-li{
+    height: 211px;
+    min-width: 241px;
+    left: 34px;
+    top: 161px;
+    border-radius: 0px;
+    background-color: var(--withe);
+    margin-left: 5%;
+    margin-top: 1.6rem;
+    border-bottom: solid 1px var(--brand);
+}
+.list-li:hover{
+    background-color: var(--grey300);
+}
+.list-li > h2{
+    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+}
+.list-li > span{
+
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 1rem;
+}
+.list-li > div{
+    height: 32px;
+    width: min-content;
+    left: 49px;
+    top: 310px;
+    border-radius: 255px;
+    border:  1px solid var(--brand);
+    margin-top: 1rem;
+    color: var(--brand);
+    margin-left: 1rem;
+    min-width: 73px; 
+}
+.list-ul-post{
+    background-color: var(--back);
+    min-height: 412px;
+    width: 80%;
+    border: 1px solid var(--back);
+    margin-top: -1px;
+    margin-left: 10%;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3.67rem;
+}
+.list-ul-post > li{
+    text-decoration: none;
+    list-style: none;
+    width: 25%;
+    margin-left: 3.67rem;
+    margin-top: 3.67rem;
+    border: 1px solid var(--brand);
+}
+.list-ul-post > li > h3{
+    margin-left: 1rem;
+}
+.list-ul-post > li > p{
+    margin-left: 1rem;
+}
+.list-ul-admin{
+    height: 350px;
+    width: 80%;
+    padding: 0 0 0 0;
+    border-radius: 0px;
+    background-color:var(--grey300);
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-li-admin{
+    max-height: 196px;
+    min-height: 190px;
+    border-bottom: 3px solid var(--brand);
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: var(--withe);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.list-li-admin > h3{
+    margin-left: 1.65rem;
+    font-size: 1.3rem;
+}
+.list-li-admin > p{
+    margin-left: 1.65rem;
+    font-size: 1.1rem;
+    margin-top: -9px;
+}
+.list-li-admin > div{
+    margin-left: 1.65rem;
+    margin-top: 1rem;
+}

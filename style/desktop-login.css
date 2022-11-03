@@ -1,0 +1,16 @@
+@media(min-width:700px){
+    .form{
+        width: 50%;
+    }
+    .space-header{
+        width: 80%;
+    }
+}
+@media(min-width:1000px){
+    .form{
+        width: 30%;
+    }
+    .space-header{
+        width: 80%;
+    }
+}

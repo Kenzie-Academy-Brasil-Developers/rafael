@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --brand:#4200FF;
+    --withe:#FFFFFF;
+    --black:#000000;
+    --alert:#CE4646;
+    --green:#4BA036;
+    --purple:rgba(66, 0, 255, 0.5);
+    --back: #F8F8F8;
+    --grey300: rgba(0, 0, 0, 0.103);
+    --grey200: rgba(246, 244, 244, 0.5);
+    --grey400: rgba(0, 0, 0, 0.1);
+    --grey500: rgba(255, 255, 255, 0.95);
+    --grey600: rgb(250, 239, 239);
+    --brand-back:  #4623A721;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}

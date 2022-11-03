@@ -1,0 +1,14 @@
+body{
+    background-image: url("../../acets/Rectangle\ 7.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+    height: 100vh;
+}
+header{
+    background-color: var(--grey500);
+}
+main{
+    height: 90%;
+}
