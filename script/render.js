@@ -457,7 +457,6 @@ async function renderUsersDepartament(id){
     const p = document.querySelector(".campany")
     const arr    = await listUsers()
     const newArr = arr.filter(element => element.department_uuid === id)
-    console.log(newArr)
     newArr.forEach((element,i) => {
         if(i == 0){
             ul.innerHTML = ""
@@ -547,7 +546,6 @@ export async function renderUsers(arr){
     const array = await renderDepartament()
     const list = []
     let contador = 0
-    console.log(array)
     array.filter((element,i) =>{
            span.forEach(e => {
                 if(e.id == element.uuid){
@@ -555,7 +553,6 @@ export async function renderUsers(arr){
                 }
            })
     })
-    console.log(list)
 
 }
 function createModalEditUser2(id){

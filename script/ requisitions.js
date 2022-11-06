@@ -299,7 +299,6 @@ export async function contratar(body){
     setTimeout(()=>{div.innerHTML = ""},5000)
 }
 export async function editUserAdmin(id,body){
-    console.log(body)
     const token = localStorage.getItem("token")
     const newToken = JSON.parse(token)
     try{

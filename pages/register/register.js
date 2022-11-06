@@ -21,7 +21,6 @@ function options(){
         redirecionamento()
     })
     const ancora = document.querySelector(".sumir")
-    console.log(ancora)
     const but = document.querySelector(".cadastrar")
     but.addEventListener("click",()=>{
         window.location.href = "/pages/login/login.html"
