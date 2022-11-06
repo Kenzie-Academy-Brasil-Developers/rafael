@@ -4,7 +4,6 @@ function options(){
     const div    = document.querySelector('.options');
     const back   = document.querySelector('.open-back');
     const retorno  = document.querySelector(".retornar")
-    console.log(retorno)
     const x = document.createElement("p");
     x.innerText = "X";
     x.classList = "clear-modal";
@@ -21,10 +20,30 @@ function options(){
         fechar()
         redirecionamento()
     })
+    const ancora = document.querySelector(".sumir")
+    console.log(ancora)
+    const but = document.querySelector(".cadastrar")
+    but.addEventListener("click",()=>{
+        window.location.href = "/pages/login/login.html"
+    })
+    ancora.addEventListener("click",(event)=>{
+        if(event.target.classList == "home"){
+            window.location.href = "/index.html"
+        }
+    })
+    div.addEventListener("click", (event)=>{
+        if(event.target.classList == "login home"){
+            window.location.href = "/index.html"
+        }
+        if(event.target.classList == "register log"){
+            window.location.href = "/pages/login/login.html"
+        }
+    })
     retorno.addEventListener("click",(event) =>{
         event.preventDefault()
         window.location.href = "http://127.0.0.1:5500/index.html    "
     })
+    
     
 }
 function redirecionamento(){

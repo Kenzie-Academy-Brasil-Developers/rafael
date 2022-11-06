@@ -24,6 +24,21 @@
 .title-h1-modal{
     font-size: 40px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 60px;   
+}
+.subTitle-user-h3{
+    max-height: 60px;
+    width: 289px;
+    left: 2414px;
+    top: 2654px;
+    border-radius: nullpx;    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
     
+}
+.ppp{
+    margin-right: 33x0px;
 }

@@ -136,3 +136,147 @@
     position: absolute;
     font-size: 1.5rem;
 }
+.red{
+    background-color: var(--alert);
+    border-color: var(--alert);
+}
+.buttonxx{
+    background: none;
+    border: none;
+    margin-bottom: -3rem;
+    font-size: 1.2rem;
+    margin-right: -2rem;
+}
+.contrato{
+    height: 48px;
+    width: 157px;
+    left: 3032px;
+    top: 2709px;
+    border-radius: 0px;
+    color: var(--withe);
+    border: none;
+    margin-top: 14px;
+    background-color: var(--green);
+    font-size: 1.2rem;
+
+}
+.users-but > button{
+    width: 200px;
+    background-color: var(--withe);
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+.users-but > button:hover{
+    background-color: var(--green);
+    color: var(--withe);
+}
+.xxx{
+    margin-top: 1rem;
+    background: none;
+    border:none;
+    font-size: 1.2rem;
+}
+.editar-user-ddd{
+    height: 48px;
+    width: 422px;
+    left: 2404px;
+    top: 3607px;
+    border-radius: 0px;
+    color: var(--withe);
+    background-color: var(--brand);
+    border: 1px solid var(--brand);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.divButt > button{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.buttLevel{
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 35px;
+    background-color: var(--withe);
+    color:  var(--green);
+    border: 1px solid var(--green);
+}
+.butt{
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 35px;
+    background-color: var(--withe);
+    color:  var(--green);
+    border: 1px solid var(--green);
+}
+.fechar{
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 35px;
+    background-color: var(--withe);
+    color:  var(--green);
+    border: 1px solid var(--green);
+}
+.fechar:hover{
+    background-color: var(--alert);
+    color: var(--withe);
+    border-color:  var(--alert);
+
+}
+.buttLevel:hover{
+    background-color: var(--green);
+    color: var(--withe);
+}
+.butt:hover{
+    background-color: var(--green);
+    color: var(--withe);
+}
+.fechar1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 35px;
+    background-color: var(--withe);
+    color:  var(--green);
+    border: 1px solid var(--green);
+}
+.fechar1:hover{
+    color: var(--withe);
+    background-color: var(--alert);
+    border-color:  var(--alert);
+}
+.home{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--brand);
+    border: 1px solid var(--brand);
+    margin-right: 1rem;
+    width: 9rem;
+    background: none;
+    height: 3rem;
+}
+.cadastrar{
+    background-color: var(--brand);
+    width: 9rem;
+    height: 3rem;
+    color: var(--withe);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border:  1px solid var(--brand);
+}
+.home:hover{
+    opacity: 80%;
+}
+.cadastrar:hover{
+    opacity: 80%;
+}
+.register:hover{
+    opacity: 80%;
+}
+.login:hover{
+    opacity: 80%;
+}

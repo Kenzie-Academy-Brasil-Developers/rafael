@@ -6,3 +6,10 @@
     margin-right: 1.3rem ;
     margin-left: 1.3rem;
 }
+.penPurple{
+    margin-right: 1.3rem;
+    width: 30px;
+    height: 30px;
+    background-image: url("../purple.png");
+    background-repeat: no-repeat;
+}

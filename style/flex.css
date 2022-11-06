@@ -37,3 +37,6 @@
     bottom: 2000px;
     left: 101%;
 }
+.end{
+    align-items: flex-end;
+}

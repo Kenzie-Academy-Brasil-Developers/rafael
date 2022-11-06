@@ -1,6 +1,73 @@
 header{
-    height: 7%;
+    height: 80px;
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     background-color: var(--withe);
+}
+@media(min-width:700px){
+    .vector{
+        width: 0;
+        height: 0;
+        background: none;
+    }
+    .options{
+        background: none;
+        width: 0;
+        height: 0;
+        margin-left: -10000px;
+
+    }
+    .open-back > p{
+        color: none;
+        background: none;
+        font-size: 0;
+        font-weight: 0;
+    }
+    .div-options{
+        width: 0;
+        background: none;
+        height: 0;
+        margin-bottom: 0;
+        font-size: 0;
+        font-weight: 0;
+        color: none;
+    }
+    .div-options> button{
+        width: 0;
+        background: none;
+        height: 0;
+        margin-bottom: 0;
+        font-size: 0;
+        font-weight: 0;
+        color: none;
+    }
+    .option{
+        width: 0;
+        background: none;
+        height: 0;
+        bottom: 0;
+        font-size: 0;
+        font-weight: 0;
+        color: none;
+    }
+}
+@media(max-width:699px){
+    .sumir{
+        position: absolute;
+        color: none;
+        bottom: 0;
+        background: none;
+        width: 0;
+        height: 0;
+    }
+    .sumir > button{ 
+        opacity: 0;
+        width: 0px;
+        border: none;
+        color: none;
+        background: none;
+        height: 0px;
+        font-size: 0;
+        font-weight: 0;
+    }
 }

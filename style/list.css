@@ -84,7 +84,7 @@
     padding: 0 0 0 0;
     border-radius: 0px;
     background-color:var(--grey300);
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -114,3 +114,78 @@
     margin-left: 1.65rem;
     margin-top: 1rem;
 }
+.ul-list-user{
+    height: 290px;
+    background-color: var(--grey400);
+    overflow-x: scroll;
+    margin-top: 55px;
+}
+.li-list-user{
+    height: 196px;
+    min-width: 306px;
+    left: 2447px;
+    top: 2851px;
+    border-radius: 0px;    
+    background-color: var(--withe);
+    margin-right: 31px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid var(--brand);
+}
+.li-list-user > button{
+    margin-top: 22px;
+    height: 48px;
+    width: 157px;
+    left: 2521px;
+    top: 2978px;
+    border-radius: 0px;
+    color: var(--alert);
+    border: 1px solid var(--alert);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    
+}
+.ul-list-user-adm{
+    height: 385px;
+    left: 140px;
+    top: 746px;
+    border-radius: 0px;
+    background-color:   var(--grey400) ;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin-bottom: 4rem;
+}
+.li-list-user-adm{
+     width: 40%;
+     height: 196px;
+     left: 196px;
+     top: 780px;
+     margin-top: 5%;
+     margin-left: 5%;
+     margin-right: 5%;
+     background-color: var(--withe);
+     border-radius: 0px;
+     overflow-y: auto;
+     border-bottom: 3px solid var(--brand);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     
+}
+/* .li-list-user > div> h3{
+    margin-left: 1.65rem;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+} */

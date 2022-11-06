@@ -4,7 +4,6 @@ import {verificationUserTokenAdmim} from '../../script/ requisitions.js'
 async function logout (){
     const user = await verificationUserTokenAdmim()
     const token = localStorage.getItem("token")
-    console.log(user)
     if(user.is_admin == true){
         return window.location.href = "/pages/admin/admin.html"
     }

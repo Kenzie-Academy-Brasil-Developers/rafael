@@ -11,7 +11,6 @@ export async function coletaDeInputs(){
     button.addEventListener("click",async (event) =>{
         event.preventDefault()
         if(level.value == ""){
-            console.log("foi")
             const result = await register({
                 username: `${user.value}` ,
                 password: `${password.value}`,

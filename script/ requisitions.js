@@ -15,7 +15,6 @@ export async function listAllSectors(){
     }
 }
 export async function register(obj){
-    console.log(obj)
     const request = await fetch("http://localhost:6278/auth/register",{
             method: "POST",
             headers: {
@@ -24,7 +23,6 @@ export async function register(obj){
             body: JSON.stringify(obj),
               
     }).then(result=>result.json())
-    .then(result => console.log(result))
     .catch((err)=>{
         return alert(err)
     })
@@ -42,7 +40,7 @@ export async function login(obj){
         if(request.status == 200){  
            const result = await request.json()
            localStorage.setItem("token", JSON.stringify(await result))
-           return await result
+           return await request.status
         }    
     }catch(err){
         alert(err)
@@ -77,7 +75,6 @@ export async function verificationUserTokenAdmim(){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
            return await result
         }    
     }catch(err){
@@ -97,7 +94,6 @@ export async function verificationUserToken(){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
            return await result
         }    
     }catch(err){
@@ -118,7 +114,6 @@ export async function editUser(body){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
            return await result
         }    
     }catch(err){
@@ -138,7 +133,6 @@ export async function renderDepartament(){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
            return await result
         }    
     }catch(err){
@@ -148,19 +142,35 @@ export async function renderDepartament(){
 export async function listDepartments(id){
     const token = localStorage.getItem("token")
     const newToken = JSON.parse(token)
-    console.log(id)
     try{
         const request = await fetch(`http://localhost:6278/departments/${id}`,{
             method: "GET",
             headers: {
                 "content-type":"application/json",
                 "Authorization": `Bearer ${newToken.token}`,
-
             },
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
+           return await result
+        }    
+    }catch(err){
+        alert(err)
+    }
+}
+export async function demitirFuncionario(id){
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/departments/dismiss/${id}`,{
+            method: "PATCH",
+            headers: {
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+        })
+        if(request.status == 200){  
+           const result = await request.json()
            return await result
         }    
     }catch(err){
@@ -181,7 +191,6 @@ export async function editDepartamento(body,id){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
            return await result
         }    
     }catch(err){
@@ -201,7 +210,128 @@ export async function deletarDepartamento(id){
         })
         if(request.status == 200){  
            const result = await request.json()
-           console.log(await result)
+           return await result
+        }    
+    }catch(err){
+        alert(err)
+    }
+}
+export async function createElementDepatament(body){
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/departments`,{
+            method: "POST",
+            headers:{
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+            body: JSON.stringify(body),
+        })
+        if(request.status == 200){  
+           const result = await request.json()
+           return await result
+        }    
+    }catch(err){
+        console.log(err)
+    }
+}
+export async function listUsers(){
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/users`,{
+            method: "GET",
+            headers:{
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+        })
+        if(request.status == 200){  
+           const result = await request.json()
+           return await result
+        }    
+    }catch(err){
+        alert(err)
+    }
+}
+export async function userDesepremgado(){
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/admin/out_of_work        `,{
+            method: "GET",
+            headers:{
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+        })
+        if(request.status == 200){  
+           const result = await request.json()
+           return await result
+        }    
+    }catch(err){
+        alert(err)
+    }
+}
+export async function contratar(body){
+    const div = document.querySelector(".sucesso")
+    div.insertAdjacentHTML("afterbegin",`
+    <div class="cardSucesso flex align-item">
+        <div class="bola"></div>
+        <h2>Contratado com sucesso</h2>
+    </div>
+    `)
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    const request = await fetch("http://localhost:6278/departments/hire/",{
+            method: "PATCH",
+            headers: {
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+            body: JSON.stringify(body),
+              
+    }).then(result=>result.json())
+    .catch((err)=>{
+        return alert(err)
+    })
+    setTimeout(()=>{div.innerHTML = ""},5000)
+}
+export async function editUserAdmin(id,body){
+    console.log(body)
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/admin/update_user/${id}`,{
+            method: "PATCH",
+            headers:{
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+            body: JSON.stringify(body),
+        })
+        if(request.status == 200){  
+           const result = await request.json()
+           return await result
+        }    
+    }catch(err){
+        alert(err)
+    }
+}
+export async function deleteUserEDemitir(id){
+    const token = localStorage.getItem("token")
+    const newToken = JSON.parse(token)
+    try{
+        const request = await fetch(`http://localhost:6278/admin/delete_user/${id}`,{
+            method: "DELETE",
+            headers:{
+                "content-type":"application/json",
+                "Authorization": `Bearer ${newToken.token}`,
+            },
+        })
+        if(request.status == 200){  
+           const result = await request.json()
            return await result
         }    
     }catch(err){
