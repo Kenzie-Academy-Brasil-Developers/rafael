@@ -12,7 +12,7 @@ function pegaLogin(){
         }
         const satatus = await login(obj)
         if(satatus == 200){
-            setTimeout(()=>{window.location.href = "http://127.0.0.1:5500/pages/post/posts.html"},1000)
+            setTimeout(()=>{window.location.href = "/pages/post/posts.html"},1000)
         }else{
             button.classList.toggle("red")
             button.innerText = "seu email está errado"
@@ -51,7 +51,7 @@ function options(){
     })
     retorno.addEventListener("click",(event) =>{
         event.preventDefault()
-        window.location.href = "http://127.0.0.1:5500/pages/register/register.html"
+        window.location.href = "/pages/register/register.html"
     })
     const ancora = document.querySelector(".sumir")
     ancora.addEventListener("click",(event)=>{
@@ -67,10 +67,10 @@ function redirecionamento(){
     const register = document.querySelector(".home")
     const log = document.querySelector(".log")
     register.addEventListener("click",()=>{
-        window.location.href = "http://127.0.0.1:5500/index.html"
+        window.location.href = "/index.html"
     })
     log.addEventListener("click",()=>{
-        window.location.href = "http://127.0.0.1:5500/pages/register/register.html"
+        window.location.href = "/pages/register/register.html"
     })
 }
 function fechar(){
