@@ -394,7 +394,7 @@ function renderCardDelet(id,string){
     back.addEventListener("click", (event)=>{
         if (event.target.classList == "check"){
             deletarDepartamento(id)
-            setTimeout(()=>{window.location.href = "http://127.0.0.1:5500/pages/admin/admin.html"})
+            setTimeout(()=>{window.location.href = "/pages/admin/admin.html"})
         }
         else if(event.target.classList == "background aaa" || event.target.classList == "fechar-xx"){
             back.classList.remove("aaa")

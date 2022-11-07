@@ -8,12 +8,12 @@ async function logout (){
         return window.location.href = "/pages/admin/admin.html"
     }
     if(!token){
-        window.location.href = "http://127.0.0.1:5500/pages/login/login.html"
+        window.location.href = "/pages/login/login.html"
     }
     const button = document.querySelector(".logout")
     button.addEventListener("click", () => {
         localStorage.clear("token")
-        window.location.href = "http://127.0.0.1:5500/pages/login/login.html"
+        window.location.href = "/pages/login/login.html"
     })  
 }
 logout()
