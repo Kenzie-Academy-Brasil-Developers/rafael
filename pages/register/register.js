@@ -40,7 +40,7 @@ function options(){
     })
     retorno.addEventListener("click",(event) =>{
         event.preventDefault()
-        window.location.href = "http://127.0.0.1:5500/index.html    "
+        window.location.href = "/index.html"
     })
     
     
@@ -49,10 +49,10 @@ function redirecionamento(){
     const register = document.querySelector(".home")
     const log = document.querySelector(".log")
     register.addEventListener("click",()=>{
-        window.location.href = "http://127.0.0.1:5500/index.html"
+        window.location.href = "/index.html"
     })
     log.addEventListener("click",()=>{
-        window.location.href = "http://127.0.0.1:5500/pages/login/login.html"
+        window.location.href = "/pages/login/login.html"
     })
 }
 function fechar(){
