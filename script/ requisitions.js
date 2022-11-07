@@ -23,7 +23,7 @@ export async function register(obj){
             body: JSON.stringify(obj),
               
     }).then(result=>result.json())
-    window.location.href = "/pages/login/login.html"
+    setTimeout(()=>{window.location.href = "/pages/login/login.html"},500)
     .catch((err)=>{
         return alert(err)
     })
